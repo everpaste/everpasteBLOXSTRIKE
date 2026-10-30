@@ -269,14 +269,14 @@ do
 		end
 
 		local ai = "zaml/logo.png"
-		local aj = isfile(ai) and readfile(ai) or nil
+local aj = isfile(ai) and readfile(ai) or nil
 
-		if not (type(aj) == "string" and #aj > 1000) then
-			for ak, al in ipairs({
-				"https://media.discordapp.net/attachments/1505982120118718505/1565417660139700424/channels4_profile-removebg-preview.png?ex=6ae4d44e&is=6ae382ce&hm=7f1bdec6e037e669a25e5ae9503a376d5d0125484ae819022c65b9badd4d3e25",
-				"https://media.discordapp.net/attachments/1505982120118718505/1565417660139700424/channels4_profile-removebg-preview.png?ex=6ae4d44e&is=6ae382ce&hm=7f1bdec6e037e669a25e5ae9503a376d5d0125484ae819022c65b9badd4d3e25&format=png",
-			}) do
-				local ag, ah = pcall(game.HttpGet, game, al)
+if not (type(aj) == "string" and #aj > 1000) then
+    for ak, al in ipairs({
+        "https://media.discordapp.net/attachments/1505982120118718505/1565624438643499129/-__EverPaste-removebg-preview.png?ex=6ae594e2&is=6ae44362&hm=20a340ca1ead3f61df0faeeb275ee2cf5f375c21490b1d66415c71993af57476",
+        "https://media.discordapp.net/attachments/1505982120118718505/1565624438643499129/-__EverPaste-removebg-preview.png?ex=6ae594e2&is=6ae44362&hm=20a340ca1ead3f61df0faeeb275ee2cf5f375c21490b1d66415c71993af57476",
+    }) do
+        local ag, ah = pcall(game.HttpGet, game, al)
 
 				if ag and (type(ah) == "string" and ah:sub(2, 4) == "PNG") then
 					writefile(ai, ah)
@@ -681,7 +681,7 @@ if setthreadidentity then
 end
 
 local ad = ac:CreateWindow({
-	Title = "NEVER PASTE",
+	Title = "EVERPASTE",
 	Icon = (function()
 		for ad, ae in ipairs({
 			"zaml/logo.png",
@@ -700,7 +700,7 @@ local ad = ac:CreateWindow({
 		return "crosshair"
 	end)(),
 	IconSize = 38,
-	Author = "by ragfa9",
+	Author = "by EVERPASTE",
 	Folder = "zaml/bloxstrike",
 	Size = (function()
 		local ad, ae = 900, 560
